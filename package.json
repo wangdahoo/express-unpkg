@@ -1,0 +1,59 @@
+{
+  "name": "express-unpkg",
+  "version": "2.0.1",
+  "description": "Express middleware that serves files from npm",
+  "repository": "unpkg/express-unpkg",
+  "license": "MIT",
+  "author": "Michael Jackson",
+  "files": [
+    "FileUtils.js",
+    "IndexUtils.js",
+    "MetadataUtils.js",
+    "PackageUtils.js",
+    "RegistryCache.js",
+    "RegistryUtils.js",
+    "ResponseUtils.js",
+    "StyleUtils.js",
+    "components",
+    "index.js"
+  ],
+  "scripts": {
+    "build": "node ./tools/build.js",
+    "clean": "git clean -fdX .",
+    "release": "node ./tools/release.js",
+    "prepublish": "node ./tools/build.js",
+    "lint": "eslint modules",
+    "test": "npm run lint"
+  },
+  "dependencies": {
+    "csso": "^2.0.0",
+    "debug": "^2.2.0",
+    "etag": "^1.7.0",
+    "gunzip-maybe": "^1.2.1",
+    "isomorphic-fetch": "^2.2.1",
+    "lru-cache": "^4.0.1",
+    "mime": "^1.3.4",
+    "mkdirp": "^0.5.1",
+    "os-tmpdir": "^1.0.1",
+    "pretty-bytes": "^4.0.2",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "redis": "^2.6.2",
+    "semver": "^5.0.3",
+    "tar-fs": "^1.8.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-core": "^6.5.2",
+    "babel-eslint": "^7.2.1",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-1": "^6.5.0",
+    "eslint": "^3.4.0",
+    "eslint-plugin-import": "^1.7.0",
+    "eslint-plugin-react": "^6.0.0",
+    "in-publish": "^2.0.0",
+    "readline-sync": "^1.4.1"
+  }
+}
