@@ -11,7 +11,8 @@ var decodeParam = function decodeParam(param) {
 
 var ValidQueryKeys = {
   main: true,
-  json: true
+  json: true,
+  v: true // for `*.ttf?v=2.0.0`
 };
 
 var queryIsValid = function queryIsValid(query) {
