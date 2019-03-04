@@ -1,6 +1,6 @@
 {
-  "name": "express-unpkg",
-  "version": "2.0.1",
+  "name": "@wangdahoo/express-unpkg",
+  "version": "2.0.2",
   "description": "Express middleware that serves files from npm",
   "repository": "unpkg/express-unpkg",
   "license": "MIT",
@@ -21,7 +21,6 @@
     "build": "node ./tools/build.js",
     "clean": "git clean -fdX .",
     "release": "node ./tools/release.js",
-    "prepublish": "node ./tools/build.js",
     "lint": "eslint modules",
     "test": "npm run lint"
   },
